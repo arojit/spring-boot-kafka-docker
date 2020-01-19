@@ -6,7 +6,7 @@ Storing user activity log
 Docker
 ```
 
-**Run the following three commands for setting up MYSQL in your machine as a docker container.**
+**Run the following commands for setting up MYSQL in your machine as a docker container.**
 ```
 docker pull mysql/mysql-server
 docker run --name=mysql-docker -e MYSQL_USER=arojit -e MYSQL_ROOT_PASSWORD=root -e MYSQL_PASSWORD=root -e MYSQL_DATABASE=techmantra -d mysql/mysql-server
