@@ -1,0 +1,22 @@
+2020-01-19 13:20:42,760 [myid:] - INFO  [main:QuorumPeerConfig@133] - Reading configuration from: /home/arojit/Documents/JAVA_PRACTICE/spring-boot-kafka-docker/apache-zookeeper-3.5.6-bin/bin/../conf/zoo.cfg
+2020-01-19 13:20:42,781 [myid:] - INFO  [main:QuorumPeerConfig@385] - clientPortAddress is 0.0.0.0/0.0.0.0:2181
+2020-01-19 13:20:42,782 [myid:] - INFO  [main:QuorumPeerConfig@389] - secureClientPort is not set
+2020-01-19 13:20:42,788 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2020-01-19 13:20:42,790 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2020-01-19 13:20:42,791 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2020-01-19 13:20:42,791 [myid:] - WARN  [main:QuorumPeerMain@125] - Either no config or no quorum defined in config, running  in standalone mode
+2020-01-19 13:20:42,794 [myid:] - INFO  [main:ManagedUtil@46] - Log4j found with jmx enabled.
+2020-01-19 13:20:42,825 [myid:] - INFO  [main:QuorumPeerConfig@133] - Reading configuration from: /home/arojit/Documents/JAVA_PRACTICE/spring-boot-kafka-docker/apache-zookeeper-3.5.6-bin/bin/../conf/zoo.cfg
+2020-01-19 13:20:42,825 [myid:] - INFO  [main:QuorumPeerConfig@385] - clientPortAddress is 0.0.0.0/0.0.0.0:2181
+2020-01-19 13:20:42,825 [myid:] - INFO  [main:QuorumPeerConfig@389] - secureClientPort is not set
+2020-01-19 13:20:42,825 [myid:] - INFO  [main:ZooKeeperServerMain@117] - Starting server
+2020-01-19 13:20:42,832 [myid:] - INFO  [main:FileTxnSnapLog@103] - zookeeper.snapshot.trust.empty : false
+2020-01-19 13:20:42,833 [myid:] - ERROR [main:ZooKeeperServerMain@75] - Unable to access datadir, exiting abnormally
+org.apache.zookeeper.server.persistence.FileTxnSnapLog$DatadirException: Cannot write to data directory /opt/apache-zookeeper-3.5.6-bin/data/version-2
+	at org.apache.zookeeper.server.persistence.FileTxnSnapLog.<init>(FileTxnSnapLog.java:120)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:124)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:106)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:64)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:128)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:82)
+Unable to access datadir, exiting abnormally
