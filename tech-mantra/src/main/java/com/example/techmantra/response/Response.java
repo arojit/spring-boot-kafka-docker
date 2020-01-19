@@ -1,4 +1,4 @@
-package com.example.techmantra;
+package com.example.techmantra.response;
 
 import lombok.Data;
 
