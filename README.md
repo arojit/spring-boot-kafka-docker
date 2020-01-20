@@ -1,5 +1,10 @@
 # spring-boot-kafka-docker
-Storing user activity log
+The idea is to capture user activity logs into a MySQL database, having three different containers for MySQL, Kafka, and ZooKeeper.
+
+**Tools and Techniques**
+```
+Java Spring Boot, JPA-Hibernate, Rest APIs, Docker, MySQL, Kafka
+```
 
 **prerequisite**
 ```
