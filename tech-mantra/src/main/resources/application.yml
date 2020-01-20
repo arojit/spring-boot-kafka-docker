@@ -1,0 +1,15 @@
+server:
+  port: 8085
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://docker-mysql:3306/techmantra
+    username: root
+    password: root
+  kafka:
+    consumer:
+      group-id: g_1
+      auto-offset-reset: earliest
+      bootstrap-servers: kafka:9092
