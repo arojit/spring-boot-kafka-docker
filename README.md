@@ -16,6 +16,7 @@ git
 ```
 > git clone https://github.com/arojit/spring-boot-kafka-docker.git
 > cd tech-mantra
+> docker build -t spring-kafka-mysql .
 > docker-compose up 
      or 
 > docker-compose up -d
