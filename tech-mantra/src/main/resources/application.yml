@@ -5,11 +5,11 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://docker-mysql:3306/techmantra
+    url: jdbc:mysql://localhost:6033/techmantra
     username: root
     password: root
   kafka:
     consumer:
       group-id: g_1
       auto-offset-reset: earliest
-      bootstrap-servers: kafka:9092
+      bootstrap-servers: localhost:9092
