@@ -15,7 +15,7 @@ public class Consumer {
     @Autowired
     UserActivityRepository userActivityRepository;
 
-    @KafkaListener(topics = "test", groupId = "g_1")
+    @KafkaListener(topics = "user-log", groupId = "g_1")
     public void consume(String message){
         ObjectMapper mapper = new ObjectMapper();
         try {
