@@ -4,15 +4,37 @@ Storing user activity log
 **prerequisite**
 ```
 Docker
+git
 ```
 
 **Run the following commands for setting up MYSQL in your machine as a docker container.**
 ```
-docker pull mysql/mysql-server
-docker run --name=mysql-docker -e MYSQL_USER=arojit -e MYSQL_ROOT_PASSWORD=root -e MYSQL_PASSWORD=root -e MYSQL_DATABASE=techmantra -d mysql/mysql-server
+> git clone https://github.com/arojit/spring-boot-kafka-docker.git
+> cd tech-mantra
+> docker-compose up 
+     or 
+> docker-compose up -d
+>java -jar build/libs/tech-mantra-0.0.1-SNAPSHOT.jar
 ```
+**Available APIs**
+```
+1.Add User to MySQL
 
-**You can login to the mysql by running the following command**
-```
-docker exec -it mysql-docker mysql -u arojit -p
+POST http://localhost:8085/user/add-user
+Request Body 
+  {
+    "email": "ghosh.ari6@gmail.com",
+    "phoneNumber": 8906653242
+  }
+
+2. Add User Activity Log
+
+POST http://localhost:8085/user/user-activity
+Request Body
+  {
+    "user":{
+      "email": "ghosh.ari6@gmail.com"
+    },
+    "activity": "Visit Page 1"
+  }
 ```
